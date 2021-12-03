@@ -1,0 +1,9 @@
+.Header{
+   background:linear-gradient(
+    #4B0082, #6A5ACD
+   );
+   height: 5rem;
+ display: flex;
+ 
+}
+

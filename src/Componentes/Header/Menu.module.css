@@ -1,0 +1,86 @@
+.Container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
+.mobileButton {
+  background: #eee;
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.mobileButton::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: 1.2s;
+}
+.mobileButton:focus,
+.mobileButton:hover,
+.mobileButtonAtivo {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px #ffc125;
+  border-color: white;
+  color: #ffc125;
+}
+.mobileButtonAtivo::after {
+  transform: rotate(90deg);
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 8px currentColor, 0 -8px currentColor;
+}
+.ulMobile {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+.ulMobile li {
+  margin-right: 10px;
+}
+.ulMobilestyle {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  margin-top: 30px;
+  padding: 0 1rem;
+  color: white;
+  background: linear-gradient(#6a5acd, #4b0082);
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.ulMobileAtivo:hover {
+  color: #ffc125;
+}
+.ulMobileAtivo {
+  transition: 1.5s;
+  transform: translateY(10px);
+  width: 100%;
+  height: 200px;
+  opacity: 1;
+  z-index: 100;
+}
+.ulMobilestyle li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background: none;
+  width: 100%;
+  border: none;
+  padding: 0.7rem 0;
+}
