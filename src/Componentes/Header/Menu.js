@@ -1,6 +1,6 @@
 import React from 'react';
 import useMedia from '../../Hooks/useMedia';
-import Img from '../img/Img';
+
 import styles from './Menu.module.css';
 
 const Menu = () => {

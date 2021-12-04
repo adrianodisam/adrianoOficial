@@ -1,9 +1,5 @@
-.Header{
-   background:linear-gradient(
-    #4B0082, #6A5ACD
-   );
-   height: 5rem;
- display: flex;
- 
+.Header {
+  background: linear-gradient(#4b0082, #6a5acd);
+  height: 3rem;
+  display: flex;
 }
-
