@@ -1,14 +1,14 @@
 .Banner {
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
-  max-height: 320px;
+  height: 330px;
   width: 100%;
-  align-content: space-between;
-  border-bottom: 1px solid gray;
 }
 .ButtonBanner {
-  height: 30px;
-  width: 6rem;
+  height: 40px;
+  width: 7rem;
+  position: relative;
+  bottom: 3rem;
   border: none;
   border-radius: 10%;
   color: white;
@@ -19,27 +19,47 @@
     rgba(8, 2, 42, 1) 37%,
     rgba(0, 99, 255, 1) 100%
   );
+  font-weight: bolder;
   transition: 1.2s;
   grid-column-start: 2;
 }
 .ButtonBanner:hover,
 .ButtonBanner:focus {
   outline: none;
-  transition: 0.3s;
-  box-shadow: 0 2px 0 1px gray;
-}
-.img {
-  opacity: 0.5;
-  width: 100px;
-  grid-column-start: 6;
+  transition: 0.8s;
+  -webkit-box-shadow: 5px 8px 29px 5px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 8px 29px 5px rgba(0, 0, 0, 0.57);
+
+  background-image: linear-gradient(to left, #050c37, #004074);
 }
 .img2 {
-  opacity: 0.2;
+  opacity: 0.4;
   width: 140px;
   grid-column-start: 1;
 }
-.div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.div h1 {
+  position: relative;
+  font-size: 2.5rem;
+  right: 7rem;
+  grid-column-start: 1;
+}
+.div h2 {
+  position: relative;
+  bottom: 5rem;
+  left: 2.5rem;
+  font-size: 2.5rem;
+  color: #eee8aa;
+}
+.div span {
+  position: relative;
+  bottom: 7rem;
+  left: 5rem;
+  font-size: 1.5rem;
+}
+.div h3 {
+  position: relative;
+  bottom: 6rem;
+  left: 1rem;
+  font-size: 2rem;
 }

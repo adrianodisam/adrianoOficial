@@ -4,6 +4,7 @@
   justify-content: center;
   width: 100%;
   align-items: center;
+  background: #e0ffff;
   border-bottom: 1px solid gray;
 }
 .mobileButton {
@@ -33,9 +34,8 @@
 .mobileButtonAtivo {
   outline: none;
   background: white;
-  box-shadow: 0 0 0 3px #ffc125;
-  border-color: white;
-  color: #ffc125;
+  box-shadow: 2px 2px 1px gray;
+  color: gray;
 }
 .mobileButtonAtivo::after {
   transform: rotate(90deg);
@@ -55,6 +55,7 @@
   display: flex;
   flex-direction: row;
   margin-right: 30px;
+  color: gray;
 }
 .ulMobilestyle {
   display: flex;
@@ -63,19 +64,21 @@
   align-items: center;
   transition: 0.5s;
   height: 5px;
-  color: white;
+  color: gray;
   transform: translateX(-15px);
   opacity: 0;
+  width: 100%;
 }
 .ulMobileAtivo:hover {
-  color: #ffc125;
+  color: #eee8aa;
 }
 .ulMobileAtivo {
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: 1.5s;
-  height: 4rem;
+  width: 100%;
+  height: 8rem;
   opacity: 1;
   z-index: 100;
 }
@@ -84,7 +87,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 2rem;
   list-style: none;
-  background: none;
+  color: gray;
+  width: 100%;
+  height: 4rem;
+}
+.ulMobilestyle li:hover {
+  background-color: gray;
+  color: white;
 }

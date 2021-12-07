@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './Banner.module.css';
 import img from '../img/Adrianofoto-removebg-preview.png';
-import img1 from '../img/HYPER_20200408_173014_null-removebg-preview.png';
 const Banner = () => {
   return (
     <div className={styles.Banner}>
-      <img className={styles.img2} src={img} />
+      <img className={styles.img2} alt="foto" src={img} />
       <div className={styles.div}>
+        <h1>Adriano</h1>
+        <h2>Sampaio</h2>
+        <h3>Front-End</h3>
+        <span>Desenvolvedor Web </span>
         <button className={styles.ButtonBanner}>Fale Comigo</button>
       </div>
-
-      <img className={styles.img} src={img1} />
     </div>
   );
 };
