@@ -9,7 +9,6 @@ const Menu = () => {
   const ToogleMode = () => {
     setAtivo(!ativo);
   };
-
   return (
     <div className={styles.Container}>
       {mobile && (
@@ -21,7 +20,6 @@ const Menu = () => {
           onClick={ToogleMode}
         ></button>
       )}
-      {/*    <Img  onClick={ToogleMode} ativo={ativo}  /> */}
       <ul
         className={`${mobile ? styles.ulMobilestyle : styles.ulMobile} ${
           ativo && styles.ulMobileAtivo
