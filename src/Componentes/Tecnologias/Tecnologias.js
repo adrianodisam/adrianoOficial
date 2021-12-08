@@ -1,8 +1,14 @@
 import React from 'react';
 import useMedia from '../../Hooks/useMedia';
+import CssSvg from './CssSvg';
+import HtmlSvg from './HtmlSvg';
+
+import NodeSvg from './NodeSvg';
+import ReactSvg from './ReactSvg';
+
 import styles from './Tecnologias.module.css';
 const tec = ['javaScrip', 'React', 'Node', 'Css', 'Html'];
-
+const svgs = [<NodeSvg />, <ReactSvg />, <HtmlSvg />, <CssSvg />];
 function Tecnologias() {
   const mobile = useMedia('(max-width: 40rem)');
   return (
@@ -11,10 +17,8 @@ function Tecnologias() {
         mobile ? styles.sectionTecnologiasMobyle : styles.sectionTecnologias
       }`}
     >
-      {tec.map((tecno) => (
-        <div className={`${mobile ? styles.divTecMobyle : styles.divTec}`}>
-          <p className={styles.divTec}>{tecno}</p>
-        </div>
+      {svgs.map((svg) => (
+        <div className={styles.svgs}>{svg}</div>
       ))}
     </section>
   );

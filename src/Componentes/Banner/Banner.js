@@ -8,8 +8,9 @@ const Banner = () => {
       <div className={styles.div}>
         <h1>Adriano</h1>
         <h2>Sampaio</h2>
-        <h3>Front-End</h3>
+
         <span>Desenvolvedor Web </span>
+        <h3>Front-End</h3>
         <button className={styles.ButtonBanner}>Fale Comigo</button>
       </div>
     </div>
