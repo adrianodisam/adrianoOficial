@@ -5,30 +5,20 @@
   align-items: center;
   background: #1b264f;
   width: 100%;
-  height: 200px;
+  height: 350px;
 }
-.divTec {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
 
-  background: #1b264f;
-  border-radius: 50%;
-}
 .sectionTecnologiasMobyle {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   background: #1b264f;
+  margin-left: 2px;
 }
 .divTecMobyle {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0%;
@@ -38,11 +28,30 @@
   background: #e0ffff;
   border-radius: 0%;
 }
-.svgs {
+.divSvgMobile {
+  border: 1px solid #e0ffff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #e0ffff;
-  width: 80%;
+  border-radius: 10px;
+  margin: 20px;
+  width: 100%;
+}
+.divSvg {
+  border: 1px solid #e0ffff;
+  border-radius: 10px;
+  height: 250px;
+}
+.Svgs {
+  padding: 1rem;
+  display: flex;
+  width: 7rem;
+}
+.psvg {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.cabec {
+  background: #1b264f;
+  color: #eee8aa;
 }

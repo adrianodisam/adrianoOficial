@@ -1,26 +1,59 @@
 import React from 'react';
 import useMedia from '../../Hooks/useMedia';
-import CssSvg from './CssSvg';
-import HtmlSvg from './HtmlSvg';
-
-import NodeSvg from './NodeSvg';
-import ReactSvg from './ReactSvg';
-
 import styles from './Tecnologias.module.css';
-const tec = ['javaScrip', 'React', 'Node', 'Css', 'Html'];
-const svgs = [<NodeSvg />, <ReactSvg />, <HtmlSvg />, <CssSvg />];
+import javaScripSvg from '../img/svgs/javascript-svgrepo-com.svg';
+import reactSvg from '../img/svgs/react-svgrepo-com.svg';
+import nodeSvg from '../img/svgs/node-svgrepo-com.svg';
+import htmlSvg from '../img/svgs/html-svgrepo-com.svg';
+import cssSvg from '../img/svgs/css-svgrepo-com.svg';
+
+const tec = [
+  {
+    tecnologia: 'Javascript',
+    svg: javaScripSvg,
+  },
+  {
+    tecnologia: 'React',
+    svg: reactSvg,
+  },
+  {
+    tecnologia: 'Node',
+    svg: nodeSvg,
+  },
+  {
+    tecnologia: 'Html',
+    svg: htmlSvg,
+  },
+  {
+    tecnologia: 'Css',
+    svg: cssSvg,
+  },
+];
+
 function Tecnologias() {
   const mobile = useMedia('(max-width: 40rem)');
   return (
-    <section
-      className={`${
-        mobile ? styles.sectionTecnologiasMobyle : styles.sectionTecnologias
-      }`}
-    >
-      {svgs.map((svg) => (
-        <div className={styles.svgs}>{svg}</div>
-      ))}
-    </section>
+    <>
+      <div className={styles.cabec}>
+        {' '}
+        <h1>Tecnologias</h1>
+      </div>
+
+      <section
+        className={`${
+          mobile ? styles.sectionTecnologiasMobyle : styles.sectionTecnologias
+        }`}
+      >
+        {tec.map(({ tecnologia, svg }) => (
+          <div className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}>
+            <img alt={tecnologia} className={styles.Svgs} src={svg} />
+            <div className={styles.psvg}>
+              <p>{tecnologia}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+    </>
   );
 }
 
