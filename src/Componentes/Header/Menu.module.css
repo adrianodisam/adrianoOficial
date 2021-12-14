@@ -3,7 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #e0ffff;
+  background: #1b264f;
+}
+.ContainerMobile {
+  display: flex;
+  justify-content: right;
 }
 .mobileButton {
   background: #eee;
@@ -45,19 +49,13 @@
   display: flex;
   list-style: none;
   position: relative;
-  left: 300px;
+  margin-right: 1rem;
   height: 2rem;
   flex-direction: row;
   justify-content: cente;
   align-items: center;
 }
-.ulMobile li {
-  display: flex;
-  flex-direction: row;
-  margin-right: 30px;
-  color: gray;
-  padding: 0.4rem;
-}
+
 .ulMobile :hover {
   transition: 0.9s;
   border-bottom: 1px solid #eee;
@@ -69,7 +67,6 @@
   transition: 0.5s;
   height: 5px;
   background: #e0ffff;
-  color: gray;
   transform: translateX(-15px);
   opacity: 0;
   width: 100%;
@@ -84,18 +81,25 @@
   height: 8rem;
   opacity: 1;
   z-index: 100;
+  background: #1b264f;
 }
-.ulMobilestyle li {
+.ulMobileLink {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   list-style: none;
-  color: gray;
+  color: white;
+  margin-left: 10px;
+  padding: 2rem;
   width: 50%;
-  height: 4rem;
+  margin-top: 0.5rem;
 }
+
 .ulMobilestyle li:hover {
   transition: 0.9s;
   border-bottom: 1px solid #eee;
+}
+.linkStyle {
+  margin-bottom: 9px;
 }

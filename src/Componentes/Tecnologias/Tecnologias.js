@@ -35,11 +35,11 @@ function Tecnologias() {
   return (
     <>
       <div className={styles.cabec}>
-        {' '}
         <h1>Tecnologias</h1>
       </div>
 
       <section
+        id="Tecnologias"
         className={`${
           mobile ? styles.sectionTecnologiasMobyle : styles.sectionTecnologias
         }`}

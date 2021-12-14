@@ -3,9 +3,11 @@ import Container from './Componentes/Container/Container';
 
 function App() {
   return (
-    <div className="App">
-      <Container />
-    </div>
+    <>
+      <div className="App">
+        <Container />
+      </div>
+    </>
   );
 }
 

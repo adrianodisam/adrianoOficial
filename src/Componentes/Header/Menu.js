@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import useMedia from '../../Hooks/useMedia';
 
 import styles from './Menu.module.css';
@@ -10,7 +11,7 @@ const Menu = () => {
     setAtivo(!ativo);
   };
   return (
-    <div className={styles.Container}>
+    <div className={`${mobile ? styles.Container : styles.ContainerMobile}`}>
       {mobile && (
         <button
           className={`${styles.mobileButton} ${
@@ -25,10 +26,47 @@ const Menu = () => {
           ativo && styles.ulMobileAtivo
         }`}
       >
-        <li>Sobre</li>
-        <li>Tecnologias</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <Link
+          to="Sobre"
+          spy={true}
+          smooth={true}
+          offset={90}
+          duration={1000}
+          className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
+        >
+          Sobre
+        </Link>
+
+        <Link
+          to="Tecnologias"
+          spy={true}
+          smooth={true}
+          offset={90}
+          duration={1000}
+          className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
+        >
+          Tecnologias
+        </Link>
+        <Link
+          to="Projetos"
+          spy={true}
+          smooth={true}
+          offset={90}
+          duration={1000}
+          className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
+        >
+          Projetos
+        </Link>
+        <Link
+          to="Contato"
+          spy={true}
+          smooth={true}
+          offset={90}
+          duration={1000}
+          className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
+        >
+          Contato
+        </Link>
       </ul>
     </div>
   );

@@ -4,6 +4,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return (
     <div className={styles.Footer}>
+      <h1>Rodapé</h1>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0099ff"
