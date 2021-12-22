@@ -1,5 +1,24 @@
 .Sobre {
   width: 100%;
-  background: #1b264f;
-  height: 400px;
+  color: #72727e;
+  background: #0e091b;
+}
+.geral {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.geral p {
+  max-width: 300px;
+  font-weight: bolder;
+  font-size: 1rem;
+  font-family: 'Cera Pro Regular';
+}
+
+.sectionImg img {
+  opacity: 0.7;
+  width: 350px;
+  border-radius: 50%;
 }

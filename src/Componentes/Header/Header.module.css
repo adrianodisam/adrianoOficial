@@ -1,6 +1,4 @@
 .Header {
-  background: linear-gradient(#4b0082, #6a5acd);
   height: 3rem;
   display: flex;
-  border-bottom: 1px solid gray;
 }

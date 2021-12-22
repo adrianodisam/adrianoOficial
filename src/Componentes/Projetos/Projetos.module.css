@@ -1,11 +1,30 @@
 .Projetos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(8, 2, 42, 1) 37%,
-    rgba(0, 99, 255, 1) 100%
-  );
-  height: 400px;
+  background-color: #1c1c1c;
+}
+.projetosMomento {
+  width: 100%;
+  color: #72727e;
+}
+.container {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #72727e;
+  border-radius: 15px;
+}
+.criacao {
+  padding: 10px;
+  height: 150px;
+  border-radius: 10px;
+}
+.texto {
+  padding: 1rem;
+}
+.svgGithub {
+  width: 3rem;
 }
