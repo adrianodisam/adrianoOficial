@@ -6,6 +6,7 @@ import reactSvg from '../img/svgs/react-svgrepo-com.svg';
 import nodeSvg from '../img/svgs/node-svgrepo-com.svg';
 import htmlSvg from '../img/svgs/html-svgrepo-com.svg';
 import cssSvg from '../img/svgs/css-svgrepo-com.svg';
+
 const tec = [
   {
     tecnologia: 'Javascript',

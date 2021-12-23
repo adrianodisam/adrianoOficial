@@ -12,19 +12,18 @@
   margin-left: 5px;
   color: #72727e;
   font-size: 1.2rem;
-  transition: 0.5s;
+  transition: 0.8s;
   font-family: 'Cera Pro Regular';
 }
 .Footer span:hover {
-  color: white;
+  color: #eee;
 }
-.Footersvgsdiv img {
-  width: 22px;
-  margin-left: 10px;
+.Footer svg {
+  width: 30px;
+  margin-right: 5px;
+  fill: #72727e;
 }
-
-.Footersvgsdiv img:hover {
-  width: 10px;
-  fill: blueviolet;
-  transition: 0.3s;
+.Footer svg:hover {
+  fill: #eee;
+  transition: 0.8s;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../Projetos/Projetos.module.css';
 import svggithub from '../img/github.png';
 import deceMania from '../img/doceMania.png';
+
 const criacoes = [
   {
     nome: 'Site',
@@ -69,6 +70,7 @@ const Projetos = () => {
           ></div>
         </div>
       ))}
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
         <path
           fill="#0e091b"
