@@ -3,22 +3,40 @@
   color: #72727e;
   background: #0e091b;
 }
+
+.Sobre svg {
+  width: 100px;
+  transform: rotate(180deg);
+  transition: 3s;
+}
+.svgMode {
+  fill: #ffffe0;
+  filter: drop-shadow(0 0 3rem #ffffe0);
+}
 .geral {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.geralP {
+  filter: drop-shadow(0 0 3rem #72727e);
+}
 
 .geral p {
-  max-width: 300px;
-  font-weight: bolder;
-  font-size: 1rem;
-  font-family: 'Cera Pro Regular';
+  max-width: 350px;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .sectionImg img {
-  opacity: 0.7;
-  width: 350px;
   border-radius: 50%;
+  width: 18rem;
+  border: double 10px #ffffe0;
+}
+.anima {
+  opacity: 0.7;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 3rem 0 2rem greenyellow;
 }

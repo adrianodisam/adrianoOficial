@@ -7,24 +7,43 @@
   width: 100%;
   background-color: #1c1c1c;
 }
+.Projetos p {
+  padding: 0.6rem;
+  color: #72727e;
+  font-size: 1.3rem;
+}
 .projetosMomento {
   width: 100%;
   color: #72727e;
 }
+
 .container {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #72727e;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: #2c1c1c;
   border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+.link a {
+  text-decoration: none;
+  color: #72727e;
 }
 .criacao {
-  padding: 10px;
-  height: 150px;
+  width: 200px;
   border-radius: 10px;
+  align-items: center;
 }
-.texto {
-  padding: 1rem;
-}
+
 .svgGithub {
-  width: 3rem;
+  padding: 6px;
+  width: 4rem;
 }

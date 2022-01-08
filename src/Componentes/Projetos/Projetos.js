@@ -8,32 +8,55 @@ const criacoes = [
     nome: 'Site',
     url: 'https://lannydocemania.com.br/',
     img: deceMania,
+    texto:
+      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.',
   },
   {
     nome: 'Site',
     url: 'https://lannydocemania.com.br/',
     img: deceMania,
+    texto:
+      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.',
   },
   {
     nome: 'Site',
     url: 'https://lannydocemania.com.br/',
     img: deceMania,
+    texto:
+      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.',
   },
 ];
 const Projetos = () => {
   const [dados, setDados] = React.useState([]);
-  const [projetos, setProjetos] = React.useState(null);
+  const [projetos, setProjetos] = React.useState(0);
+  const [anima, setAnima] = React.useState(false);
+  const eleme = React.useRef();
 
   React.useEffect(() => {
-    fetch('https://api.github.com/users/adrianodisam/repos')
-      .then((res) => res.json())
-      .then((data) => setDados(data));
-  }, []);
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      if (entries.some((entries) => entries.isIntersecting)) {
+        setAnima(true);
+      } else {
+        setAnima(false);
+      }
+    });
+    intersectionObserver.observe(eleme.current);
+
+    return () => intersectionObserver.disconnect();
+  }, [anima]);
+
+  React.useEffect(() => {
+    if (anima === true) {
+      fetch('https://api.github.com/users/adrianodisam/repos')
+        .then((res) => res.json())
+        .then((data) => setDados(data));
+    }
+  }, [anima]);
   React.useEffect(() => {
     for (let i = 0; i <= dados.length; i++) {
       setTimeout(() => {
         setProjetos(i);
-      }, 80 * i);
+      }, 90 * i);
     }
   }, [dados]);
 
@@ -47,27 +70,38 @@ const Projetos = () => {
         ></path>
       </svg>
       <div className={styles.projetosMomento}>
-        <h1 id="Projetos">
+        <h1
+          id="Projetos"
+          className={`${anima && 'tracking-in-expand-fwd-top'}`}
+        >
           <span>{projetos}</span> Projetos
         </h1>
-        <p>Até o momento no Github</p>{' '}
-        <img className={styles.svgGithub} src={svggithub} alt="svggithub" />
+        <p className={`${anima && 'tracking-in-expand-fwd-top'}`} ref={eleme}>
+          Até o momento no Github
+        </p>{' '}
+        <img
+          ref={eleme}
+          className={`${styles.svgGithub} ${anima && 'bounce-top '}`}
+          src={svggithub}
+          alt="svggithub"
+        />
       </div>
 
       {criacoes.map((criacao) => (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${anima && 'fadeInLeft'}`}>
           <div className={styles.texto}>
-            <h2>{criacao.nome}</h2> <span>{criacao.url}</span>
+            <h2>{criacao.nome}</h2>
           </div>
-
-          <div
-            className={styles.criacao}
-            style={{
-              backgroundImage: `url("${criacao.img}")`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          ></div>
+          <div>
+            <img
+              className={`${styles.criacao}  ${
+                anima && 'roll-in-blurred-left'
+              }`}
+              src={criacao.img}
+              alt="svggithub"
+            />
+          </div>
+          <p>{criacao.texto}</p>
         </div>
       ))}
 
