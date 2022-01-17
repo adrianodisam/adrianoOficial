@@ -58,8 +58,7 @@
 }
 
 .ulMobile :hover {
-  transition: 0.3s;
-  border-bottom: 3px solid white;
+  transition: 2s;
   color: white;
 }
 .ulMobilestyle {

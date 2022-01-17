@@ -6,19 +6,21 @@ import foto from '../img/fotoAdrianoSobre.jpg';
 const Sobre = () => {
   const paragrafo = React.useRef();
   const [elemento, setElemento] = React.useState(false);
-
-  React.useEffect(() => {
+  function animar(ref, estado) {
     const intersectionObserver = new IntersectionObserver((entries) => {
       if (entries.some((entries) => entries.isIntersecting)) {
         setElemento(true);
       } else {
         setElemento(false);
       }
-      console.log(elemento);
     });
     intersectionObserver.observe(paragrafo.current);
 
     return () => intersectionObserver.disconnect();
+  }
+
+  React.useEffect(() => {
+    animar(paragrafo, elemento);
   }, [elemento]);
 
   return (
@@ -49,18 +51,6 @@ const Sobre = () => {
             />
           </section>
         </section>
-
-        <svg
-          className={styles.svgBordas}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#0e091b"
-            fill-opacity="1"
-            d="M0,96L120,133.3C240,171,480,245,720,240C960,235,1200,149,1320,106.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-          ></path>
-        </svg>
       </section>
     </>
   );

@@ -2,3 +2,18 @@
   color: #72727e;
   background-color: #1c1c1c;
 }
+.ContatoRedeSociais {
+  width: 100%;
+}
+.ContatoRedeSociais svg {
+  width: 100px;
+  height: 200px;
+
+  margin-left: 1rem;
+  fill: #72727e;
+}
+.ContatoRedeSociais svg:hover {
+  fill: #eee;
+  transition: 1s;
+  transform: rotate(360deg);
+}

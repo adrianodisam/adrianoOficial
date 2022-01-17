@@ -62,7 +62,11 @@ const Projetos = () => {
 
   return (
     <div className={styles.Projetos}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        id="Projetos"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#0e091b"
           fill-opacity="1"
@@ -70,15 +74,12 @@ const Projetos = () => {
         ></path>
       </svg>
       <div className={styles.projetosMomento}>
-        <h1
-          id="Projetos"
-          className={`${anima && 'tracking-in-expand-fwd-top'}`}
-        >
+        <h1 className={`${anima && 'tracking-in-expand-fwd-top'}`}>
           <span>{projetos}</span> Projetos
         </h1>
-        <p className={`${anima && 'tracking-in-expand-fwd-top'}`} ref={eleme}>
+        <p className={`${anima && 'tracking-in-expand-fwd-top'}`}>
           Até o momento no Github
-        </p>{' '}
+        </p>
         <img
           ref={eleme}
           className={`${styles.svgGithub} ${anima && 'bounce-top '}`}
@@ -88,15 +89,13 @@ const Projetos = () => {
       </div>
 
       {criacoes.map((criacao) => (
-        <div className={`${styles.container} ${anima && 'fadeInLeft'}`}>
+        <div className={`${styles.container}`}>
           <div className={styles.texto}>
             <h2>{criacao.nome}</h2>
           </div>
           <div>
             <img
-              className={`${styles.criacao}  ${
-                anima && 'roll-in-blurred-left'
-              }`}
+              className={`${styles.criacao}  ${anima && 'animap'}`}
               src={criacao.img}
               alt="svggithub"
             />
@@ -105,7 +104,7 @@ const Projetos = () => {
         </div>
       ))}
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <svg id="Sobre" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
         <path
           fill="#0e091b"
           fill-opacity="1"
