@@ -312,6 +312,7 @@ body {
     transform: none;
   }
 }
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -322,5 +323,26 @@ body {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+  }
+}
+.animationpiscar {
+  animation: bordeerright 500ms steps(40) infinite normal,
+    escrever 4s steps(40) 1s normal both;
+}
+
+@keyframes bordeerright {
+  0% {
+    border-right-color: #eee;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+@keyframes escrever {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.2em;
   }
 }

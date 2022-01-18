@@ -1,34 +1,40 @@
 .banner {
-  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  background-image: url(../img/pexels-negative-space-169573-removebg-preview.png);
+  background-repeat: no-repeat;
 }
 
 .banner h1 {
-  position: relative;
-  font-size: 2.5rem;
-  right: 8rem;
-  grid-column-start: 1;
+  margin-right: 8rem;
+  font-size: 2.6rem;
 }
 .banner h2 {
-  position: relative;
-  bottom: 2rem;
-  margin-left: 3rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-left: 8rem;
   color: #72727e;
 }
 
 .banner h3 {
-  position: relative;
-  bottom: 4rem;
-  left: 1rem;
-  font-size: 2rem;
+  font-size: 2.2em;
+
+  font-weight: bold;
+  color: #cd853f;
+  border-right: 5px solid #eee;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.banner a {
+.banner div a {
   position: relative;
   text-decoration: none;
   padding: 0.9rem;
   font-weight: bolder;
   border-radius: 15px;
-  color: #72727e;
+  color: #eee;
   border: 1px solid #0e091b;
   transition: 1s;
 }

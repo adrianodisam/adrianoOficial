@@ -32,7 +32,7 @@ const Menu = () => {
           smooth={true}
           offset={90}
           duration={1000}
-          className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
+          className={`${mobile ? styles.linkStyle : styles.ulMobileLink} `}
         >
           Sobre
         </Link>
@@ -43,7 +43,7 @@ const Menu = () => {
           smooth={true}
           offset={90}
           duration={1000}
-          className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
+          className={`${mobile ? styles.linkStyle : styles.ulMobileLink} `}
         >
           Tecnologias
         </Link>
