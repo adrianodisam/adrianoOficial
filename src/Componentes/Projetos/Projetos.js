@@ -65,7 +65,7 @@ const Projetos = () => {
       <svg
         id="Projetos"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
+        viewBox="0 0 1440 319"
       >
         <path
           fill="#0e091b"
@@ -104,7 +104,7 @@ const Projetos = () => {
         </div>
       ))}
 
-      <svg id="Sobre" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <svg id="Sobre" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
         <path
           fill="#0e091b"
           fill-opacity="1"

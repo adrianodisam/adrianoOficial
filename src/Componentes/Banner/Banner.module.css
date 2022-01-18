@@ -1,12 +1,17 @@
 .banner {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  height: 400px;
   position: relative;
   align-items: center;
   flex-direction: column;
   background-color: #1c1c1c;
-  background-image: url(../img/pexels-negative-space-169573-removebg-preview.png);
+  background-image: url(../img/kisspng-wire-idea-wiring-diagram-hand-painted-curve-bulb-vector-5a8f42e8c79d59.9307899915193382168176.png);
   background-repeat: no-repeat;
+  background-size: contain;
+}
+.banner img {
+  width: 200px;
 }
 
 .banner h1 {
@@ -20,8 +25,7 @@
 }
 
 .banner h3 {
-  font-size: 2.2em;
-
+  font-size: 2.8em;
   font-weight: bold;
   color: #cd853f;
   border-right: 5px solid #eee;
@@ -29,18 +33,37 @@
   overflow: hidden;
 }
 .banner div a {
+  background-color: #2e091b;
   position: relative;
+  text-decoration: none;
+  padding: 1.2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  color: #72727e;
+  opacity: 0.9;
+  transition: 2s;
+}
+.banner a:hover {
+  color: #cd853f;
+  filter: drop-shadow(0 0 5rem #ffffe0);
+}
+.bannerRespo h1 {
+  margin-right: 0rem;
+  font-size: 1.9rem;
+}
+
+.bannerRespo h3 {
+  font-size: 1.6rem;
+}
+.bannerRespo a {
+  position: relative;
+  top: 3rem;
   text-decoration: none;
   padding: 0.9rem;
   font-weight: bolder;
   border-radius: 15px;
   color: #eee;
-  border: 1px solid #0e091b;
+  background-color: #2c1c1c;
   transition: 1s;
-}
-.banner a:hover {
-  background-color: #0e091b;
-  box-shadow: 5px 5px 0px 0px #1e091b, 8px 9px 30px 0px #2e091b,
-    15px 15px 0px 0px #1e091b, 20px 20px 9px 0px #2e091b,
-    25px 25px 0px 0px #2e091b, 3px 23px 17px -11px rgba(0, 0, 0, 0);
+  opacity: 0.9;
 }

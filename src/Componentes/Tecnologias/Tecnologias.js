@@ -40,7 +40,7 @@ function Tecnologias() {
           mobile ? styles.sectionTecnologiasMobyle : styles.sectionTecnologias
         }`}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 322">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
           <path
             fill="#1c1c1c"
             fill-opacity="1"

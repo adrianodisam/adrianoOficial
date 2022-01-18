@@ -6,7 +6,7 @@ import React from 'react';
 const Contato = () => {
   return (
     <div id="Contato" className={styles.Contato}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
         <path
           fill="#0e091b"
           fill-opacity="1"
