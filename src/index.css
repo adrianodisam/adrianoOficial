@@ -6,10 +6,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
-}
-.svgBordas {
-  height: 100px;
 }
 
 .animated {
@@ -457,4 +453,16 @@ body {
     -webkit-transform: translateY(-6px) rotate(-1.2deg);
     transform: translateY(-6px) rotate(-1.2deg);
   }
+}
+
+@keyframes tecno {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tecnologias {
+  animation: tecno 1s steps(40) 1s normal both;
 }

@@ -7,6 +7,9 @@
   width: 100%;
   background-color: #1c1c1c;
 }
+.Projetos h2 {
+  color: #eee;
+}
 .Projetos p {
   padding: 0.6rem;
   color: #72727e;

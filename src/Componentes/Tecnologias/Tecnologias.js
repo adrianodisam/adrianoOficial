@@ -4,8 +4,8 @@ import styles from './Tecnologias.module.css';
 import javaScripSvg from '../img/svgs/javascript-svgrepo-com.svg';
 import reactSvg from '../img/svgs/react-svgrepo-com.svg';
 import nodeSvg from '../img/svgs/node-svgrepo-com.svg';
-import htmlSvg from '../img/svgs/html-svgrepo-com.svg';
-import cssSvg from '../img/svgs/css-svgrepo-com.svg';
+import htmlSvg from '../img/svgs/html.svg';
+import cssSvg from '../img/svgs/css.svg';
 
 const tec = [
   {
@@ -31,33 +31,62 @@ const tec = [
 ];
 
 function Tecnologias() {
+  const [esfeito, setEfeitp] = React.useState(false);
+  const eleme = React.useRef();
+
   const mobile = useMedia('(max-width: 40rem)');
+  React.useEffect(() => {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      if (entries.some((entries) => entries.isIntersecting)) {
+        setEfeitp(true);
+      } else {
+        setEfeitp(false);
+      }
+    });
+    intersectionObserver.observe(eleme.current);
+
+    return () => intersectionObserver.disconnect();
+  }, [esfeito]);
   return (
     <>
-      <section
-        id="Tecnologias"
-        className={`${
-          mobile ? styles.sectionTecnologiasMobyle : styles.sectionTecnologias
-        }`}
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+      <section id="Tecnologias" className={styles.container}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#1c1c1c"
+            ref={eleme}
             fill-opacity="1"
-            d="M0,0L1440,256L1440,0L0,0Z"
+            d="M0,0L1440,96L1440,0L0,0Z"
           ></path>
         </svg>
-        <div className={styles.cabec}>
-          <h1>Conhecimentos</h1>
-        </div>
-        {tec.map(({ tecnologia, svg }) => (
-          <div className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}>
-            <img alt={tecnologia} className={styles.Svgs} src={svg} />
-            <div className={styles.psvg}>
-              <p>{tecnologia}</p>
-            </div>
-          </div>
-        ))}
+
+        <section className={styles.cabec}>
+          <h1 className={`${esfeito && 'tracking-in-expand-fwd-top'}`}>
+            Skills
+          </h1>
+        </section>
+        <section
+          ref={eleme}
+          className={`${
+            mobile ? styles.tecnologiasMobile : styles.tecnologias
+          } `}
+        >
+          {tec.map(({ tecnologia, svg }) => (
+            <section
+              className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}
+            >
+              <img
+                ref={eleme}
+                className={`${esfeito && 'tecnologias'} `}
+                alt={tecnologia}
+                src={svg}
+              />
+
+              <section ref={eleme} className={styles.psvg}>
+                <p className={`${esfeito && 'tecnologias'}`}>{tecnologia}</p>
+              </section>
+            </section>
+          ))}
+        </section>
       </section>
     </>
   );

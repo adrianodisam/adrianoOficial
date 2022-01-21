@@ -1,59 +1,33 @@
-.sectionTecnologias {
+.container {
+  background: #0e091b;
+}
+.svg {
+  width: 400px;
+}
+.tecnologias {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  background: #0e091b;
-  width: 100%;
-  height: 550px;
+  gap: 2rem;
+  height: 400px;
+}
+.tecnologiasMobile img {
+  width: 10em;
+}
+.tecnologias img {
+  border-radius: 90px;
+  margin-top: 2rem;
+  fill: aquamarine;
+  width: 100px;
 }
 
-.sectionTecnologiasMobyle {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background: #0e091b;
-}
-.divTecMobyle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0%;
-  width: 20rem;
-  height: 100px;
-  margin: 2px;
+.cabec h1 {
+  font-size: 30px;
 
-  border-radius: 0%;
+  color: #72727e;
 }
-.divSvgMobile {
-  border: 1px solid #e0ffff;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  margin: 20px;
-  width: 40%;
-}
-.divSvg {
-  background: #0e011b;
-  border-radius: 10px;
-  height: 160px;
-  padding: 20px;
-}
-.Svgs {
-  display: flex;
-  width: 5rem;
-}
-.psvg {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  padding: 10px;
-}
-.cabec {
-  width: 100%;
-  text-align: center;
+.cabec,
+p {
+  font-size: 20px;
   color: #72727e;
 }
