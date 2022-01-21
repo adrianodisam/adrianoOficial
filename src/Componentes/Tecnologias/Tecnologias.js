@@ -43,6 +43,7 @@ function Tecnologias() {
         setEfeitp(false);
       }
     });
+
     intersectionObserver.observe(eleme.current);
 
     return () => intersectionObserver.disconnect();
@@ -65,7 +66,6 @@ function Tecnologias() {
           </h1>
         </section>
         <section
-          ref={eleme}
           className={`${
             mobile ? styles.tecnologiasMobile : styles.tecnologias
           } `}
@@ -81,12 +81,13 @@ function Tecnologias() {
                 src={svg}
               />
 
-              <section ref={eleme} className={styles.psvg}>
+              <section className={styles.psvg}>
                 <p className={`${esfeito && 'tecnologias'}`}>{tecnologia}</p>
               </section>
             </section>
           ))}
         </section>
+        <div></div>
       </section>
     </>
   );

@@ -61,7 +61,7 @@ const Projetos = () => {
   }, [dados]);
 
   return (
-    <div className={styles.Projetos}>
+    <div className={styles.Projetos} id="Projetos">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
         <path
           fill="#0e091b"

@@ -461,8 +461,9 @@ body {
   }
   to {
     opacity: 1;
+    filter: drop-shadow(0 0 4rem gray);
   }
 }
 .tecnologias {
-  animation: tecno 1s steps(40) 1s normal both;
+  animation: tecno 3s steps(40) normal both;
 }

@@ -9,6 +9,9 @@
   transform: rotate(180deg);
   transition: 3s;
 }
+.SobreMobile {
+  background-color: #ffffe0;
+}
 .svgMode {
   fill: #cd853f;
   filter: drop-shadow(0 0 3rem #ffffe0);
