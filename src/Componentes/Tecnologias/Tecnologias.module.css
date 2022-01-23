@@ -1,5 +1,5 @@
 .container {
-  background: #0e091b;
+  background-color: #1c1c1c;
 }
 .svg {
   width: 400px;
@@ -23,10 +23,10 @@
 .cabec h1 {
   font-size: 30px;
 
-  color: #72727e;
+  color: #eee;
 }
 .cabec,
 p {
   font-size: 20px;
-  color: #72727e;
+  color: #eee;
 }

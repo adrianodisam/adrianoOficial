@@ -5,10 +5,10 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: #1c1c1c;
+  background-color: #0e091b;
 }
 .Projetos h2 {
-  color: #eee;
+  transition: 3s;
 }
 .Projetos p {
   padding: 0.6rem;
@@ -21,10 +21,11 @@
 }
 
 .container {
-  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
   padding: 1rem;
-  background-color: #2c1c1c;
-  border-radius: 15px;
   margin-bottom: 1rem;
 }
 .link {
@@ -39,14 +40,29 @@
 .link a {
   text-decoration: none;
   color: #72727e;
+  transition: 0.4;
 }
 .criacao {
-  width: 200px;
+  width: 300px;
   border-radius: 10px;
   align-items: center;
+  transition: 3s;
+  animation: aparecer 3s steps(40) normal both;
 }
 
 .svgGithub {
   padding: 6px;
   width: 4rem;
+}
+.SectionTexto {
+  max-width: 300px;
+  color: aqua;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

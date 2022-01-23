@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1c1c1c;
+  background-color: #0e091b;
 }
 .ContainerMobile {
   display: flex;
   justify-content: right;
-  background-color: #1c1c1c;
+  background-color: #0e091b;
 }
 .mobileButton {
   background: #eee;

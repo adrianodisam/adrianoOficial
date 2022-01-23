@@ -53,14 +53,14 @@ function Tecnologias() {
       <section id="Tecnologias" className={styles.container}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#1c1c1c"
+            fill="#0e091b"
             ref={eleme}
             fill-opacity="1"
             d="M0,0L1440,96L1440,0L0,0Z"
           ></path>
         </svg>
 
-        <section className={styles.cabec}>
+        <section ref={eleme} className={styles.cabec}>
           <h1 className={`${esfeito && 'tracking-in-expand-fwd-top'}`}>
             Skills
           </h1>
@@ -75,7 +75,6 @@ function Tecnologias() {
               className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}
             >
               <img
-                ref={eleme}
                 className={`${esfeito && 'tecnologias'} `}
                 alt={tecnologia}
                 src={svg}

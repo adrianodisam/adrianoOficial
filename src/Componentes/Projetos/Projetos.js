@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '../Projetos/Projetos.module.css';
 import svggithub from '../img/github.png';
 import deceMania from '../img/doceMania.png';
+import fundo from '../img/kisspng-wire-idea-wiring-diagram-hand-painted-curve-bulb-vector-5a8f42e8c79d59.9307899915193382168176.png';
+import fundo1 from '../img/github.png';
 
 const criacoes = [
   {
@@ -9,21 +11,21 @@ const criacoes = [
     url: 'https://lannydocemania.com.br/',
     img: deceMania,
     texto:
-      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.',
+      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, sefewefwefwefa por inserção de passagens com humor.',
   },
   {
-    nome: 'Site',
+    nome: 'programa',
     url: 'https://lannydocemania.com.br/',
-    img: deceMania,
+    img: fundo1,
     texto:
-      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.',
+      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por insdfdfwdfwfweweweerção de passagens com humor.',
   },
   {
-    nome: 'Site',
+    nome: 'sistema',
     url: 'https://lannydocemania.com.br/',
-    img: deceMania,
+    img: fundo,
     texto:
-      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.',
+      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção dff  de passagens com humor.',
   },
 ];
 const Projetos = () => {
@@ -31,6 +33,7 @@ const Projetos = () => {
   const [projetos, setProjetos] = React.useState(0);
   const [anima, setAnima] = React.useState(false);
   const eleme = React.useRef();
+  const [proximo, setProximo] = React.useState(0);
 
   React.useEffect(() => {
     const intersectionObserver = new IntersectionObserver((entries) => {
@@ -60,11 +63,20 @@ const Projetos = () => {
     }
   }, [dados]);
 
+  function next() {
+    if (proximo < criacoes.length - 1) setProximo(proximo + 1);
+  }
+  function voltar() {
+    if (proximo !== 0) {
+      setProximo(proximo - 1);
+    }
+  }
+
   return (
     <div className={styles.Projetos} id="Projetos">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
         <path
-          fill="#0e091b"
+          fill="#1c1c1c"
           fill-opacity="1"
           d="M0,96L1440,0L1440,0L0,0Z"
         ></path>
@@ -83,26 +95,29 @@ const Projetos = () => {
           alt="svggithub"
         />
       </div>
-
-      {criacoes.map((criacao) => (
-        <div className={`${styles.container}`}>
+      <div className={`${styles.container}`}>
+        <div>
           <div className={styles.texto}>
-            <h2>{criacao.nome}</h2>
+            <h2 onClick={next}>{criacoes[proximo].nome}</h2>
           </div>
-          <div>
-            <img
-              className={`${styles.criacao}  ${anima && 'animap'}`}
-              src={criacao.img}
-              alt="svggithub"
-            />
-          </div>
-          <p>{criacao.texto}</p>
+          <img
+            className={`${styles.criacao}  ${anima && 'animap'}`}
+            src={criacoes[proximo].img}
+            alt="svggithub"
+          />
         </div>
-      ))}
+        <section className={styles.SectionTexto}>
+          <p>{criacoes[proximo].texto}</p>{' '}
+          <section>
+            <button onClick={next}>Prpximo</button>
+            <button onClick={voltar}>Voltar</button>
+          </section>
+        </section>
+      </div>
 
       <svg id="Sobre" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
         <path
-          fill="#0e091b"
+          fill="#1c1c1c"
           fill-opacity="1"
           d="M0,96L1440,320L1440,320L0,320Z"
         ></path>

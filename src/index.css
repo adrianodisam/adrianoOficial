@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #eee;
 }
 
 .animated {
@@ -461,7 +462,6 @@ body {
   }
   to {
     opacity: 1;
-    filter: drop-shadow(0 0 4rem gray);
   }
 }
 .tecnologias {
