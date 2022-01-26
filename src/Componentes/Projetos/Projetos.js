@@ -1,29 +1,26 @@
 import React from 'react';
 import styles from '../Projetos/Projetos.module.css';
 import svggithub from '../img/github.png';
-import deceMania from '../img/doceMania.png';
-import fundo from '../img/kisspng-wire-idea-wiring-diagram-hand-painted-curve-bulb-vector-5a8f42e8c79d59.9307899915193382168176.png';
-import fundo1 from '../img/github.png';
 
 const criacoes = [
   {
     nome: 'Site',
     url: 'https://lannydocemania.com.br/',
-    img: deceMania,
+    img: 'Primeiro.',
     texto:
       'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, sefewefwefwefa por inserção de passagens com humor.',
   },
   {
     nome: 'programa',
     url: 'https://lannydocemania.com.br/',
-    img: fundo1,
+    img: 'segundo',
     texto:
       'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por insdfdfwdfwfweweweerção de passagens com humor.',
   },
   {
     nome: 'sistema',
     url: 'https://lannydocemania.com.br/',
-    img: fundo,
+    img: 'Terceiro',
     texto:
       'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção dff  de passagens com humor.',
   },
@@ -100,17 +97,17 @@ const Projetos = () => {
           <div className={styles.texto}>
             <h2 onClick={next}>{criacoes[proximo].nome}</h2>
           </div>
-          <img
-            className={`${styles.criacao}  ${anima && 'animap'}`}
-            src={criacoes[proximo].img}
-            alt="svggithub"
-          />
+          <section className={`${styles.projetos} ${anima && 'animap'}`}>
+            <h3>{criacoes[proximo].img}</h3>
+          </section>
         </div>
         <section className={styles.SectionTexto}>
-          <p>{criacoes[proximo].texto}</p>{' '}
-          <section>
-            <button onClick={next}>Prpximo</button>
-            <button onClick={voltar}>Voltar</button>
+          <p className={`${styles.criacao}  ${anima && 'animap'}`}>
+            {criacoes[proximo].texto}
+          </p>
+          <section className={`${styles.botao} ${anima && 'animap'}`}>
+            <div onClick={next}>Próximo</div>
+            <div onClick={voltar}>Anterior</div>
           </section>
         </section>
       </div>

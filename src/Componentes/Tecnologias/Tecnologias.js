@@ -75,7 +75,7 @@ function Tecnologias() {
               className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}
             >
               <img
-                className={`${esfeito && 'tecnologias'} `}
+                className={`${esfeito && 'animap'} `}
                 alt={tecnologia}
                 src={svg}
               />
