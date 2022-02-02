@@ -6,23 +6,23 @@ const criacoes = [
   {
     nome: 'Site',
     url: 'https://lannydocemania.com.br/',
-    img: 'Primeiro.',
+    img: 'Primeiro',
     texto:
-      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, sefewefwefwefa por inserção de passagens com humor.',
+      'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
   },
   {
     nome: 'programa',
     url: 'https://lannydocemania.com.br/',
     img: 'segundo',
     texto:
-      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por insdfdfwdfwfweweweerção de passagens com humor.',
+      'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
   },
   {
     nome: 'sistema',
     url: 'https://lannydocemania.com.br/',
     img: 'Terceiro',
     texto:
-      'Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção dff  de passagens com humor.',
+      'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
   },
 ];
 const Projetos = () => {
@@ -61,7 +61,9 @@ const Projetos = () => {
   }, [dados]);
 
   function next() {
-    if (proximo < criacoes.length - 1) setProximo(proximo + 1);
+    if (proximo < criacoes.length - 1) {
+      setProximo(proximo + 1);
+    }
   }
   function voltar() {
     if (proximo !== 0) {

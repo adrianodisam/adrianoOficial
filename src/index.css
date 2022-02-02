@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Cera Pro Regular';
-  src: url(../src/Componentes/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+  font-family: 'magic';
+  src: url(../src/Componentes/fonts/Yusei_Magic/YuseiMagic-Regular.ttf);
 }
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'magic';
   margin: 0;
   padding: 0;
   background-color: #eee;

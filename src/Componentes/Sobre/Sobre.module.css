@@ -29,7 +29,6 @@
 .geral p {
   max-width: 350px;
   color: #72727e;
-  font-family: sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
 }
@@ -37,6 +36,8 @@
 .sectionImg img {
   border-radius: 50%;
   width: 18rem;
+  border: 6px solid #72727e;
+  border-style: double;
 }
 
 .anima {
@@ -44,4 +45,23 @@
   width: 300px;
   border-radius: 50%;
   box-shadow: 0 3rem 0 2rem greenyellow;
+}
+
+.imgMobile img {
+  width: 150px;
+  border-radius: 50%;
+  border: 6px solid #72727e;
+  border-style: double;
+}
+.geralPMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1rem;
+  padding: 1rem;
+  color: #72727e;
+}
+.geralPMobile P {
+  font-size: 1rem;
 }

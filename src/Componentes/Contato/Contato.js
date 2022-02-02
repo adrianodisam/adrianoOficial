@@ -15,9 +15,12 @@ const Contato = () => {
       </svg>
       <h1>Contato</h1>
       <section className={styles.ContatoRedeSociais}>
-        <Linkedin />
-
-        <Email />
+        <a href="https://www.linkedin.com/in/adriano-silva-sampaio/">
+          <Linkedin />
+        </a>
+        <a href="mailto:adrianodisam@gmail.com">
+          <Email />
+        </a>
       </section>
     </div>
   );

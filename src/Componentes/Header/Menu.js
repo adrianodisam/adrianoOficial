@@ -11,7 +11,12 @@ const Menu = () => {
     setAtivo(!ativo);
   };
   return (
-    <div className={`${mobile ? styles.Container : styles.ContainerMobile}`}>
+    <div
+      onClick={() => {
+        setAtivo(!ativo);
+      }}
+      className={`${mobile ? styles.Container : styles.ContainerMobile}`}
+    >
       {mobile && (
         <button
           className={`${styles.mobileButton} ${
