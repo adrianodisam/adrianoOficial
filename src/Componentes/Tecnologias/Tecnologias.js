@@ -1,40 +1,21 @@
 import React from 'react';
 import useMedia from '../../Hooks/useMedia';
 import styles from './Tecnologias.module.css';
-import javaScripSvg from '../img/svgs/javascript-svgrepo-com.svg';
-import reactSvg from '../img/svgs/react-svgrepo-com.svg';
-import nodeSvg from '../img/svgs/node-svgrepo-com.svg';
-import htmlSvg from '../img/svgs/html.svg';
-import cssSvg from '../img/svgs/css.svg';
-
-const tec = [
-  {
-    tecnologia: 'Javascript',
-    svg: javaScripSvg,
-  },
-  {
-    tecnologia: 'React',
-    svg: reactSvg,
-  },
-  {
-    tecnologia: 'Node',
-    svg: nodeSvg,
-  },
-  {
-    tecnologia: 'Html',
-    svg: htmlSvg,
-  },
-  {
-    tecnologia: 'Css',
-    svg: cssSvg,
-  },
-];
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import JavascriptSvg from '../Svgs/JavascriptSvg';
+import CssSvg from '../Svgs/CssSvg';
+import HtmlSvg from '../Svgs/HtmlSvg';
+import ReactSvg from '../Svgs/ReactSvg';
+import NodeSvg from '../Svgs/NodeSvg';
 
 function Tecnologias() {
   const [esfeito, setEfeitp] = React.useState(false);
   const eleme = React.useRef();
-
   const mobile = useMedia('(max-width: 40rem)');
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
   React.useEffect(() => {
     const intersectionObserver = new IntersectionObserver((entries) => {
       if (entries.some((entries) => entries.isIntersecting)) {
@@ -70,23 +51,40 @@ function Tecnologias() {
             mobile ? styles.tecnologiasMobile : styles.tecnologias
           } `}
         >
-          {tec.map(({ tecnologia, svg }) => (
+          <section
+            className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}
+          >
             <section
-              className={`${mobile ? styles.divSvgMobile : styles.divSvg} `}
+              className={`${
+                mobile ? styles.TecnologiasMobile : styles.Tecnologias
+              }`}
             >
-              <img
-                className={`${esfeito && 'animap'} `}
-                alt={tecnologia}
-                src={svg}
-              />
+              <section data-aos="fade-right" data-aos-duration="2000">
+                <HtmlSvg />
+                <p>Html</p>
+              </section>
+              <section data-aos="fade-right" data-aos-duration="2000">
+                {' '}
+                <JavascriptSvg />
+                <p>JavaScrip</p>
+              </section>
 
-              <section className={styles.psvg}>
-                <p className={`${esfeito && 'tecnologias'}`}>{tecnologia}</p>
+              <section data-aos="fade-right" data-aos-duration="2000">
+                <ReactSvg />
+                <p>React</p>
+              </section>
+
+              <section data-aos="fade-right" data-aos-duration="2000">
+                <CssSvg />
+                <p>Css</p>
+              </section>
+              <section data-aos="fade-right" data-aos-duration="2000">
+                <NodeSvg />
+                <p>Node</p>
               </section>
             </section>
-          ))}
+          </section>
         </section>
-        <div></div>
       </section>
     </>
   );

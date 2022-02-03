@@ -73,11 +73,11 @@ const Projetos = () => {
 
   return (
     <div className={styles.Projetos} id="Projetos">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#1c1c1c"
           fill-opacity="1"
-          d="M0,96L1440,0L1440,0L0,0Z"
+          d="M0,64L1440,256L1440,0L0,0Z"
         ></path>
       </svg>
       <div className={styles.projetosMomento}>
@@ -114,11 +114,11 @@ const Projetos = () => {
         </section>
       </div>
 
-      <svg id="Sobre" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#1c1c1c"
           fill-opacity="1"
-          d="M0,96L1440,320L1440,320L0,320Z"
+          d="M0,64L1440,256L1440,320L0,320Z"
         ></path>
       </svg>
     </div>

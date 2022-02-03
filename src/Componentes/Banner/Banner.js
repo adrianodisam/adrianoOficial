@@ -10,7 +10,7 @@ const Banner = () => {
         <section
           className={`${bannerResponsivo ? styles.banner : styles.bannerRespo}`}
         >
-          <h1 className=" animap">Adriano Sampaio </h1>
+          <h1 className=" animap">Adriano Sampaio</h1>
           <h3 className="animationpiscar">Desenvolvedor Front-End</h3>{' '}
           <div className=" bounce-top">
             <a

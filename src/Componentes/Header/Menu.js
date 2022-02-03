@@ -39,7 +39,7 @@ const Menu = () => {
           duration={1000}
           className={`${mobile ? styles.linkStyle : styles.ulMobileLink} `}
         >
-          Sobre
+          <a href="#Sobre"> Sobre</a>
         </Link>
 
         <Link
@@ -50,7 +50,7 @@ const Menu = () => {
           duration={1000}
           className={`${mobile ? styles.linkStyle : styles.ulMobileLink} `}
         >
-          Tecnologias
+          <a href="#Tecnologias">Tecnologias </a>
         </Link>
         <Link
           to="Projetos"
@@ -60,7 +60,7 @@ const Menu = () => {
           duration={1000}
           className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
         >
-          Projetos
+          <a href="Projetos">projetos</a>
         </Link>
         <Link
           to="Contato"
@@ -70,7 +70,7 @@ const Menu = () => {
           duration={1000}
           className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
         >
-          Contato
+          <a href="#Contato">Contato</a>
         </Link>
       </ul>
     </div>
