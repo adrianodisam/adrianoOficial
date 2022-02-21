@@ -4,25 +4,22 @@ import svggithub from '../img/github.png';
 
 const criacoes = [
   {
-    nome: 'Site',
+    nome: 'Sistema',
     url: 'https://lannydocemania.com.br/',
     img: 'Primeiro',
-    texto:
-      'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    texto: 'Projeto em contrução...',
   },
   {
-    nome: 'programa',
+    nome: 'Site',
     url: 'https://lannydocemania.com.br/',
-    img: 'segundo',
-    texto:
-      'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    img: 'Segundo',
+    texto: 'Projeto em contrução...',
   },
   {
-    nome: 'sistema',
+    nome: 'Sistema',
     url: 'https://lannydocemania.com.br/',
     img: 'Terceiro',
-    texto:
-      'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    texto: 'Projeto em contrução...',
   },
 ];
 const Projetos = () => {

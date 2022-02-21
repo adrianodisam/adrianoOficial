@@ -60,7 +60,7 @@ const Menu = () => {
           duration={1000}
           className={`${mobile ? styles.linkStyle : styles.ulMobileLink}`}
         >
-          <a href="Projetos">projetos</a>
+          <a href="Projetos">Projetos</a>
         </Link>
         <Link
           to="Contato"

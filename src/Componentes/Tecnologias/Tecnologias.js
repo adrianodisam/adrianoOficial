@@ -64,21 +64,20 @@ function Tecnologias() {
                 <p>Html</p>
               </section>
               <section data-aos="fade-right" data-aos-duration="2000">
-                {' '}
                 <JavascriptSvg />
                 <p>JavaScrip</p>
               </section>
 
-              <section data-aos="fade-right" data-aos-duration="2000">
+              <section data-aos="fade-down" data-aos-duration="2000">
                 <ReactSvg />
                 <p>React</p>
               </section>
 
-              <section data-aos="fade-right" data-aos-duration="2000">
+              <section data-aos="fade-left" data-aos-duration="2000">
                 <CssSvg />
                 <p>Css</p>
               </section>
-              <section data-aos="fade-right" data-aos-duration="2000">
+              <section data-aos="fade-left" data-aos-duration="2000">
                 <NodeSvg />
                 <p>Node</p>
               </section>

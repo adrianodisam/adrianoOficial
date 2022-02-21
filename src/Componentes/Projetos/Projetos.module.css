@@ -66,7 +66,7 @@
   justify-content: center;
 }
 .botao :hover {
-  color: #cd853f;
+  background: #cd853f;
   filter: drop-shadow(0 0 3rem #ffffe0);
 }
 
